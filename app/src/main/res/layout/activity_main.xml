@@ -3,11 +3,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
+    <!--can't do wrap_contnet here because it wrap the entire screen due to View. Probably need to put everything below under RelativeLayout to align the View-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="@color/colorPrimary"
         android:orientation="vertical"
         android:paddingLeft="16dp"
         android:paddingRight="16dp">
@@ -144,8 +145,8 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@color/colorAccent">
 
